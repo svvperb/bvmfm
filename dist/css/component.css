@@ -1,0 +1,356 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:700');
+
+/* Albert Guillermo */
+
+*,
+*:after,
+*:before {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    overflow-y: scroll; /* has to be scroll, not auto */
+	-webkit-overflow-scrolling: touch;
+}
+.clearfix:before,
+.clearfix:after {
+    content: "";
+    display: table;
+}
+.clearfix:after {
+    clear: both;
+}
+::-webkit-scrollbar {
+    display: none;
+}
+html,
+body,
+#wrapper {
+    width: 100%;
+    height: 100%;
+    background: none;
+    font: 'Arial', sans-serif;
+    font-weight: bold;
+    font-color: black;
+    overflow-x: hidden;
+    overflow-y: scroll; /* has to be scroll, not auto */
+	-webkit-overflow-scrolling: touch;
+}
+
+#wrapper {
+    display: table;
+    overflow-y: scroll; /* has to be scroll, not auto */
+	-webkit-overflow-scrolling: touch;
+}
+#main {
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+    overflow-x: hidden;
+    overflow-y: scroll; /* has to be scroll, not auto */
+	-webkit-overflow-scrolling: touch;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+}
+a:hover {
+    color: #000;
+}
+/*** HEADER  ***/
+/* .fixed-header {
+  background: white;
+  overflow: hidden;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  z-index: 99999;
+  height: 3.5em !important;
+  transition: all 0.2s ease-in-out;
+}
+
+.fixed-header .fixed-inner {
+  position: relative;
+}
+
+.fixed-header h1 {
+  float: left;
+  text-transform: uppercase;
+   color: black;
+   font-family: "Airstrike Outline", sans-serif;
+   text-transform: uppercase;
+  font-size: 2em;
+  margin-top: 0.5em;
+  letter-spacing: 2px;
+  margin-left: 1em;
+}
+
+.fixed-header h1 {
+  float: left;
+  text-transform: uppercase;
+   color: black;
+   font-family: "Airstrike Outline", sans-serif;
+   text-transform: uppercase;
+  font-size: 2em;
+  margin-top: 0.5em;
+  letter-spacing: 2px;
+  margin-left: 1em;
+}
+
+.fixed-header h1 img {
+   float: left;
+  position: absolute;
+  margin-left: 1em;
+  width: 100px;
+  height: 100px
+} */
+
+.header {
+	padding-top: 1em;
+    width: 100%;
+    height: 150px;
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 999;
+    background-color: white;
+}
+.header h1#logo {
+	float: left;
+    margin-left:20px;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.header h1#logo img {
+   width: 120px;
+   height: auto;
+   max-width: 100%;
+}
+
+.header nav {
+	margin-top: 10px;
+    display: inline-block;
+    float: right;
+    margin-right:20px;
+}
+.header nav a {
+    height: inherit;
+    margin-left: 20px;
+    color: black;
+    font-weight: bold;
+    font-size: 16px;
+}
+.header nav a:hover {
+    color: black;
+}
+.header.smaller {
+    height: 75px;
+}
+.header.smaller h1#logo {
+    width: 150px;
+    height: 75px;
+    font-size: 30px;
+}
+.header.smaller nav a {
+    line-height: 75px;
+}
+
+.cbp-rfgrid {
+	overflow-y: scroll !important;
+    margin: 0 auto;
+    padding: 0;
+    list-style: none;
+    position: relative;
+    width: 99.9999999%;
+}
+.cbp-rfgrid li {
+	overflow-y: scroll; /* has to be scroll, not auto */
+	-webkit-overflow-scrolling: touch;
+	margin-left: -2px !important;
+    position: relative;
+    float: left;
+    overflow: hidden;
+    width: 100%; height: 100%;
+
+   /* Fallback */
+    width: -webkit-calc(100% / 3);
+    width: calc(100% / 3);
+}
+/* Image Container */
+.cbp-rfgrid li a {
+    padding-right: 10px;
+    width: 100%;
+    max-height: 100%;
+    display: inline-block;
+
+    overflow: hidden;
+    cursor: pointer;
+}
+.cbp-rfgrid li a img {
+    width: 100%;
+    height: auto;
+}
+
+.cbp-rfgrid li a div {
+    position: absolute;
+
+    /* Standard 20px */
+    /* left: 0px;
+    top: 0px;
+    right: 0px; */
+
+    bottom: 0px;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: flex;
+    -webkit-align-items: center;
+    -moz-align-items: center;
+    -ms-align-items: center;
+    align-items: center;
+    text-align: center;
+    opacity: 0;
+}
+.cbp-rfgrid li a div {
+    opacity: 1.0;
+}
+.cbp-rfgrid li a:hover div {
+    background-size: 100% 200%;
+    background-image: linear (to bottom, black 0%, white 10%);
+    -webkit-transition: background-position 1s;
+    -moz-transition: background-position 1s;
+    transition: background-position 1s;
+    background-position: 0 -100%;
+    opacity: 0.6;
+    transition: opacity 1s;
+}
+.cbp-rfgrid li a div h3 {
+    width: 100%;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    text-align: left; /* Center - Do Not Change */
+    text-transform: uppercase;
+    font-size: 16px;
+    letter-spacing: 0.5px;
+    padding: 0 10px;
+}
+.cbp-rfgrid li a div h3:hover {
+	opacity: 0.5;
+}
+/* Example for media query: change number of items per row */
+
+@media screen and (max-width: 1190px) {
+    .cbp-rfgrid li {
+        width: 20%;
+        /* Fallback */
+
+		width: -webkit-calc(100% / 3);
+		width: calc(100% / 3);
+
+        /* width: -webkit-calc(100% / 4);
+        width: calc(100% / 4); */
+    }
+}
+@media screen and (max-width: 945px) {
+    .cbp-rfgrid li {
+        width: 25%;
+        /* Fallback */
+
+		width: -webkit-calc(100% / 3);
+		width: calc(100% / 3);
+        /* width: -webkit-calc(100% / 2);
+        width: calc(100% / 2); */
+    }
+}
+@media screen and (max-width: 660px) {
+    .cbp-rfgrid li {
+        width: 33.3333333%;
+        /* Fallback */
+
+        width: -webkit-calc(100% / 2);
+        width: calc(100% / 2);
+    }
+}
+@media screen and (max-width: 660px) {
+
+    .cbp-rfgrid li {
+        width: 33.3333333%;
+        /* Fallback */
+
+        width: -webkit-calc(100% / 1);
+        width: calc(100% / 1);
+    }
+
+    #main .cbp-rfgrid {
+	    position: relative;
+	    margin-top: 40px;
+		padding-bottom: 100px;
+    }
+}
+@media screen and (max-width: 400px) {
+    .cbp-rfgrid li {
+        width: 50%;
+        /* Fallback */
+
+        width: -webkit-calc(100% / 1);
+        width: calc(100% / 1);
+    }
+
+    #main .cbp-rfgrid {
+	    position: relative;
+	    margin-top: 40px;
+		padding-bottom: 100px;
+		overflow-y: scroll; /* has to be scroll, not auto */
+		-webkit-overflow-scrolling: touch;
+    }
+
+    .cbp-rfgrid li a div h3 {
+    width: 100%;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    text-align: left; /* Center - Do Not Change */
+    text-transform: uppercase;
+    font-size: 20px;
+    letter-spacing: 0.5px;
+    padding: 0 10px;
+}
+}
+@media screen and (max-width: 300px) {
+    .cbp-rfgrid li {
+        width: 100%;
+    }
+
+    #main .cbp-rfgrid {
+	    position: relative;
+	    margin-top: 40px;
+		padding-bottom: 100px;
+		overflow-x: hidden;
+		overflow-y: scroll; /* has to be scroll, not auto */
+		-webkit-overflow-scrolling: touch;
+    }
+
+}
+
+@media all and (max-width: 660px) {
+
+	.header {
+		height: 3.5em;
+	}
+    .header h1#logo {
+        display: block;
+        margin: 0 12px;
+    }
+
+    .header nav {
+	margin-top: 3px;
+    display: inline-block;
+    float: right;
+    margin-right:6px;
+}
+
+    .header nav a {}
+}
