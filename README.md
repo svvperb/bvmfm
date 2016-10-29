@@ -1,2 +1,2 @@
-# bvmfm
-Web platform for BEVSTMODE Radio Network
+# BVM RADIO PLATFORM
+# http://bvm.fm
