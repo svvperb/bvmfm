@@ -1,2 +1,2 @@
 # BVM RADIO PLATFORM
-# http://bvm.fm
+http://bvm.fm
